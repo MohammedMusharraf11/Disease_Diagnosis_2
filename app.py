@@ -4,7 +4,7 @@ import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
 
-st.set_page_config(page_title="Disease Diagnosis", page_icon="🏥", layout="centered", initial_sidebar_state="auto", menu_items=None)
+st.set_page_config(page_title="Disease Diagnosis", page_icon="🏥")
 # Function to get data from Google Sheets
 def get_data_from_sheets():
     # Set up credentials
