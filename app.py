@@ -78,7 +78,7 @@ def main():
     symptoms = st.multiselect("Select your symptoms:", sorted(all_symptoms))
 
     # Diagnose disease
-    diagnose_button_key = hash("diagnose_button_key")  # Unique key
+    diagnose_button_key = str(hash("diagnose_button_key"))  # Unique key
     if st.button("Diagnose", key=diagnose_button_key):
         if not symptoms:
             st.warning("Please select at least one symptom.")
